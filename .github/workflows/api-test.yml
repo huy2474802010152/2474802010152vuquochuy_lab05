@@ -23,6 +23,6 @@ jobs:
       - name: Run Newman with Data-Driven Testing
         run: |
           newman run 2474802010152_vuquochuy_GoRest.postman_collection.json \
-            -e 2474802010152_vuquochuy_GoRest.postman_environment.json \
+            -e 2474802010152_vuquochuy_GoRest_Envpostman_environment.json \
             -d users.csv \
             --env-var "token=${{ secrets.GOREST_TOKEN }}"
